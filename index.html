@@ -10,6 +10,8 @@
     <link rel="icon" type="image/png" sizes="512x512" href="">
 
     <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <!-- CSS Files -->
 
@@ -29,23 +31,27 @@
         </div>
 
         <div class="right">
-            <ul>
-                <li class="nav-list"> <a href="home">Home</a> </li>
-                <li class="nav-list"> <a href="about">About</a> </li>
-                <li class="nav-list"> <a href="skills">Skills</a> </li>
-                <li class="nav-list"> <a href="portfolio">Portfolio</a> </li>
-                <li class="nav-list"> <a href="contact">Contact</a> </li>
+            <ul id="responsive-nav">
+                <li class="nav-list"> <a href="#home">Home</a> </li>
+                <li class="nav-list"> <a href="#about">About</a> </li>
+                <li class="nav-list"> <a href="#skills">Skills</a> </li>
+                <li class="nav-list"> <a href="#portfolio">Portfolio</a> </li>
+                <li class="nav-list"> <a href="#contact">Contact</a> </li>
             </ul>
+            <span class="material-symbols-outlined" id="menu" onclick="openAndCloseNav()">menu</span>
         </div>
     </nav>
+
+    <!-- Home Section -->
 
     <section class="home" id="home">
         <div class="home-left-section">
             <div class="left-content">
-                <h1>Hi, I'm Ronak B Patel</h1>
-                <span>Frontend Developer</span>
+                <h1 class="heading">Hi, I'm Ronak B Patel</h1>
+                <span class="sub-heading">Frontend Developer</span>
 
-                <p>Hi! I'm [Your Name] and I'm passionate about [Your Field of Interest]. I've always been fascinated by
+                <p class="description">Hi! I'm [Your Name] and I'm passionate about [Your Field of Interest]. I've
+                    always been fascinated by
                     [What initially sparked your interest]. This led me to explore[Mention relevant skills you learned]
                     through [How you learned them - online courses, etc.].</p>
 
