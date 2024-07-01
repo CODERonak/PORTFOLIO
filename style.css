@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -18,7 +19,10 @@ html {
 .navbar {
     display: flex;
     justify-content: space-between;
-    margin: .6rem 6rem 0 6rem;
+    margin: .6rem 1rem 0 1rem;
+    position: sticky;
+    top: 0;
+
 }
 
 .navbar .left {
@@ -35,6 +39,7 @@ html {
     align-items: center;
     list-style: none;
     margin-top: -5px;
+    transition: .5s;
 }
 
 .navbar .right ul li {
@@ -49,9 +54,39 @@ html {
     font-size: 1.2rem;
 }
 
-.navbar .right ul li a:hover {
-    border-bottom: 2px solid #003c6a;
+.navbar .right ul li a {
+    position: relative;
+    display: inline-block;
     padding-bottom: 5px;
+}
+
+.navbar .right ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #003c6a;
+    transition: width .5s ease-in-out;
+}
+
+.navbar .right ul li a:hover::after {
+    width: 100%;
+}
+
+#menu,
+#close {
+    color: #025da2;
+    font-size: 1.8rem;
+    display: none;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+#menu:hover,
+#close:hover {
+    background-color: #003c6a20;
 }
 
 /* Home Section */
@@ -59,7 +94,7 @@ html {
 .home {
     display: flex;
     justify-content: space-between;
-    margin: 6rem 6rem 0 6rem;
+    margin: 6rem 3rem 0 2rem;
     padding: 1rem;
 }
 
@@ -69,21 +104,21 @@ html {
     width: 40%;
 }
 
-.home .home-left-section .left-content h1 {
+.home .home-left-section .left-content .heading {
     font-size: 2.5rem;
     font-family: "Open sans", sans-serif;
     font-weight: 700;
     color: #003c6a;
 }
 
-.home .home-left-section span {
+.home .home-left-section .sub-heading {
     color: steelblue;
     font-size: 2rem;
     font-family: "Open sans", sans-serif;
     font-weight: 700;
 }
 
-.home .home-left-section p {
+.home .home-left-section .description {
     margin: 2rem 0 2rem 0;
     font-size: 1.2rem;
     font-family: "Roboto", sans-serif;
@@ -110,15 +145,17 @@ html {
 .home .home-left-section .btn2 {
     background: none;
     border: 2px solid #003c6a;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .home .home-left-section .btn1:hover {
     background-color: #025da2;
+    transition: .5s;
 }
 
 .home .home-left-section .btn2:hover {
     background-color: #003c6a;
+    transition: .5s;
     color: white;
 }
 
@@ -131,5 +168,4 @@ html {
 .home .home-right-section img {
     width: 26rem;
     border-radius: 50%;
-
 }
