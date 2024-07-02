@@ -21,6 +21,7 @@ html {
 /* Navbar */
 
 .navbar {
+    width: 98vw;
     display: flex;
     justify-content: space-between;
     margin: .6rem 1rem 0 1rem;
@@ -99,7 +100,7 @@ html {
 .home {
     display: flex;
     justify-content: space-between;
-    margin: 6rem 3rem 0 2rem;
+    margin: 3rem 3rem 0 2rem;
     padding: 1rem;
     height: 80vh;
 }
@@ -174,31 +175,36 @@ html {
 .home .home-right-section img {
     width: 26rem;
     border-radius: 50%;
+    /* Set top-left and top-right corners to curved */
     margin: auto;
+    background-clip: text;
+    /* Clip image based on content box */
 }
 
+
+/* About Section */
+
 .about {
-    height: 100vh;
-    text-align: center;
-    padding: 4rem;
+    height: auto;
+    background-color: #c7e0f5;
+    padding: 2rem;
 }
 
 .about .section-title {
     color: #003c6a;
     font-weight: bold;
     font-family: "Open sans", sans-serif;
-    margin-bottom: 3rem;
+    margin: 0 0 3rem;
     font-size: 3rem;
+    text-align: center;
 }
 
 .about .about-description {
-    padding: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    color: black;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    color: black;
-    box-shadow: 0px 1px 8px 4px rgba(60, 64, 67, .3);
-    border-radius: 8px;
-    font-size: 1.3rem;
-    width: 100%;
-    margin: auto;
+    line-height: 1.5;
+    text-align: center;
 }
