@@ -74,4 +74,8 @@
     .home .home-left-section .description {
         font-size: 1.3rem;
     }
+
+    .about .section-title {
+        font-size: 2.5rem;
+    }
 }
