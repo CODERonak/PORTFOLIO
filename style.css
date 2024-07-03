@@ -188,14 +188,16 @@ html {
 
 /* About Section */
 
-.about {
+.about,
+.skills,
+.projects {
     height: auto;
     background-color: #c7e0f5;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 
-.about .section-title {
+.section-title {
     color: #003c6a;
     font-weight: bold;
     font-family: "Open sans", sans-serif;
@@ -234,4 +236,133 @@ html {
     border-radius: 8px;
     margin: 0rem 0rem 4rem 5rem;
     margin: auto;
+}
+
+/* Skills */
+
+.skills {
+    background-color: #b8d7db;
+}
+
+.skills-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.skills-content .skill-name {
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+
+}
+
+.skill {
+    margin-bottom: 2rem;
+}
+
+.skills-content .skill-level {
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.skills-content .progress-bar-container {
+    height: 10px;
+    width: 200px;
+    background-color: #7fbae6;
+    border-radius: 3px;
+}
+
+.html,
+.css,
+.js,
+.react,
+.redux {
+    background-color: #003c6a;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.html {
+    width: 85%;
+}
+
+.css {
+    width: 70%;
+}
+
+.js {
+    width: 60%;
+}
+
+.react {
+    width: 50%;
+}
+
+.redux {
+    width: 40%;
+}
+
+/* Projects */
+
+.projects-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project {
+    text-align: center;
+    border-radius: 26px;
+    padding: 1rem;
+    position: relative;
+}
+
+.project img {
+    width: 20rem;
+    border-radius: 23px;
+}
+
+.hover-project {
+    visibility: hidden;
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    width: 20.1rem;
+    height: 12.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hover-project p,
+.hover-project h1 {
+    margin: 10px;
+}
+
+.open-project {
+    background-color: rgb(243, 237, 237);
+    padding: 7px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.open-project:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.project a:hover .hover-project {
+    visibility: visible;
 }
